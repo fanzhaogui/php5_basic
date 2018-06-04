@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28057361-60da-48ed-b987-33874ec7ea84" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/c_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c_3.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_1.php" beforeDir="false" afterPath="$PROJECT_DIR$/c_1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_2.php" beforeDir="false" afterPath="$PROJECT_DIR$/c_2.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +19,29 @@
       <file leaf-file-name="c_1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c_1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1452">
-              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="1298">
+              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_2.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="c_3.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/c_3.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="123" column="26" lean-forward="true" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c_2.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c_2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+            <state relative-caret-position="174">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="e#6#60#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +64,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/c_1.php" />
         <option value="$PROJECT_DIR$/c_2.php" />
+        <option value="$PROJECT_DIR$/c_1.php" />
+        <option value="$PROJECT_DIR$/c_3.php" />
       </list>
     </option>
   </component>
@@ -70,20 +85,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="php5_basic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="php5_basic" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -115,12 +117,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528075958851</updated>
       <workItem from="1528075960015" duration="7519000" />
-      <workItem from="1528093881936" duration="1761000" />
+      <workItem from="1528093881936" duration="5531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9280000" />
+    <option name="totallyTimeSpent" value="13050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1016" y="0" width="1936" height="1050" extended-state="0" />
@@ -193,6 +195,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -203,17 +208,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c_1.php">
+    <entry file="file://$PROJECT_DIR$/c_2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+        <state relative-caret-position="174">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c_2.php">
+    <entry file="file://$PROJECT_DIR$/c_1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="121" column="9" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+        <state relative-caret-position="1298">
+          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c_3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="123" column="26" lean-forward="true" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
         </state>
       </provider>
     </entry>
