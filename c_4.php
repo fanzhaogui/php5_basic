@@ -2,49 +2,14 @@
 /**
  * User: Andy
  * Date: 2018/6/5
- * Time: 23:58
+ * Time: 9:20
  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * 重载性能 Overloading Capabilities
+ *
+ *  __get __set __call ...
+ */
 
 
 
@@ -110,31 +75,3 @@ $obj[] = 'Append 1';
 $obj[] = 'Append 2';
 $obj[] = 'Append 3';
 print_r($obj);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
