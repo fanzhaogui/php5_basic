@@ -30,7 +30,7 @@ function sanitize_vars(&$vars, $signatures, $redir_url = null)
 {
     $tem = array();
     foreach ($signatures as $name => $sig) {
-        if(!isset($vars[$name]) && isset($sig['reqired']) && $sig['required'] ) {
+        if(!isset($vars[$name]) && isset($sig['required'])) {
             /* 如果变量在数组中不存在，则重定向 */
             if($redir_url) {
                 header("Location: $redir_url ");;
@@ -63,7 +63,7 @@ $sigs = array(
     ],
 );
 
-$params = sanitize_vars($_GET, $sigs, "http://{$_SERVER['SERVER_NAME']}/index.php?cause=vars");
+$params = sanitize_vars($_GET, $sigs, "http://{$_SERVER['SERVER_NAME']}/php5_basic/index.php?cause=vars");
 
 var_dump($params);
 
