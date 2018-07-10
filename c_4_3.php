@@ -48,6 +48,7 @@ class ExchangeRate
     public function setExchangeRate($new_rate)
     {
         $this->exchange_rate = $new_rate;
+        $this->notifyObservers();
     }
 
     // 注册
