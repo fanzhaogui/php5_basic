@@ -62,7 +62,7 @@ set_exception_handler('exception_handler');
 
 throw new Exception('Uncaught Exception'); // 抛出异常，被exception_handler处理，并die();
 
-echo "Not Executed\n";
+echo "Not Executed\n"; // 这里不会被执行
 
 /**
  * Tidy扩展

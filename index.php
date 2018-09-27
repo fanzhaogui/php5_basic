@@ -1,8 +1,16 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: win7
+ * User: Andy
  * Date: 2018/6/4
  * Time: 10:14
  */
-echo 123;
+
+const TIP = "HELLO WORLD";
+
+echo TIP;
+
+print TIP;
+
+var_dump(TIP);
+
+print_r(TIP);
