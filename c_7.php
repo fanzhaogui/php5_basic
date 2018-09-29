@@ -57,3 +57,13 @@
 
 # 定义错误处理器，  page/205
 
+function my_error_handler($errno, $errstr, $file, $line)
+{
+    if ($errno == E_NOTICE || $errno == E_USER_NOTICE) {
+        error_log("$file:$line $errtype: $errmsg \n", 3,
+            "/home/log/httpd/my-php-errors.log");
+        return;
+    }
+    PEAR::raiseError($errstr);
+}
+
