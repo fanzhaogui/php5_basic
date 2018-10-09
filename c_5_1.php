@@ -32,7 +32,7 @@
  */
 
 
-/* 架构
+/* 5.9 架构
 
    1. 单一脚本相应所有的请求
 
@@ -41,7 +41,9 @@
    伪码
  */
 
-foreach ($directory in "modules/") {
+/*
+
+foreach (directory in "modules/") {
     if(file_exists("definition.php")) {
         $module_def = include "definition";
         register_module(module_def);
@@ -49,13 +51,75 @@ foreach ($directory in "modules/") {
     }
 }
 
+
 if registerd_module($_GET['module']) {
     $driver = new $_GET['module']
     $driver->execute();
 }
+
+*/
 
 /*
     2 每个脚本负责一项功能 One Script per Function
 
     3 把业务逻辑与现实分离 Separating Logic from layout
  */
+?>
+
+/* 5.9.3 业务和逻辑分离 */
+
+// template.tpl
+<html>
+<head><title><?php echo $tpl['title']; ?></title></head>
+<body>
+    <h1><?php echo $tpl['title']; ?></h1>
+    <p>
+        <?php echo $tpl['description']; ?>
+    </p>
+    <?php echo $tpl['content']; ?>
+</body>
+</html>
+
+
+// list_parts.tpl.php
+<?php
+    $header = <<<END
+    <table>
+        <tr><th>Name</th><th>City</th></tr>
+    </table>
+END;
+
+    $footer = <<<END
+    
+END;
+    $item = "<tr><td>{name}</td><td>{city}</td></tr>";
+?>
+
+// show_names.php
+<?php
+
+    include 'list_parts.tpl.php';
+
+    $list = array(
+        'Andi'  => 'Tel',
+        'Derick'=> 'Skien',
+        'Stig'  => 'Trondheim'
+    );
+    $item = '';
+    foreach ($list as $name => $city) {
+        $item .= str_replace(
+            array('{name}', '{city}'),
+            array($name, $city),
+            $item
+        );
+    }
+
+    $tpl = array();
+    $tpl['title'] = "this is title";
+    $tpl['description'] = "this is descriptiondescriptiondescriptiondescription";
+    $tpl['content'] = "this is contentcontentcontentcontent";
+?>
+
+
+
+
