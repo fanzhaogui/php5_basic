@@ -38,7 +38,8 @@ class ClassTwo
 
 class ClassOneDelegator
 {
-    private $targets;
+    //private $targets;
+    public $targets;
 
     function __construct()
     {
@@ -54,17 +55,19 @@ class ClassOneDelegator
     {
         foreach ($this->targets as $obj) {
             // ReflectionClass 类报告了一个类的有关信息。
+            // print_r($obj);
+
             $r = new ReflectionClass($obj);
-            try{
+            try {
                 // 类中是否有此方法 -- 如果类中不存在方法，会抛出ReflectionException异常
                 if ($method = $r->getMethod($name)) {
-                // 是否为public的方法，是否为抽象
-                if($method->isPublic() && !$method->isAbstract()) {
-                    return $method->invoke($obj, $args);
+                    // 是否为public的方法，是否为抽象
+                    if ($method->isPublic() && !$method->isAbstract()) {
+                        return $method->invoke($obj, $args);
+                    }
                 }
-                }
-            } catch(ReflectionException $e) {
-                echo $e->getMessage();
+            } catch (ReflectionException $e) {
+                //echo "ERROR : ".$e->getMessage();
             }
         }
     }
@@ -72,6 +75,7 @@ class ClassOneDelegator
 
 $obj = new ClassOneDelegator();
 $obj->addObject(new ClassTwo());
+// print_r($obj->targets);
 $obj->callClassOne();
 $obj->callClassTwo();
 

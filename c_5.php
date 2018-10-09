@@ -63,13 +63,13 @@ $sigs = array(
     ],
 );
 
-$params = sanitize_vars($_GET, $sigs, "http://{$_SERVER['SERVER_NAME']}/php5_basic/index.php?cause=vars");
+$params = sanitize_vars($_GET, $sigs, "http://{$_SERVER['SERVER_NAME']}/index.php?cause=vars");
 
 var_dump($params);
 
 
 
-
+// 测试： your_server_naem/c_5.php?prod_id=123&desc=sadas
 
 
 
