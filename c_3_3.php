@@ -78,7 +78,7 @@ try {
 } catch (NullHandleException $e) {
     echo $e->getMessage(), "<br>";
 } catch (Exception $e) {
-    // 这里讲不会执行
+    // 这里将不会执行
 }
 
 

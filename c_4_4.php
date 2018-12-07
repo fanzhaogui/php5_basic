@@ -38,7 +38,8 @@ class ClassTwo
 
 class ClassOneDelegator
 {
-    private $targets;
+    //private $targets;
+    public $targets;
 
     function __construct()
     {
@@ -54,6 +55,8 @@ class ClassOneDelegator
     {
         foreach ($this->targets as $obj) {
             // ReflectionClass 类报告了一个类的有关信息。
+            // print_r($obj);
+
             $r = new ReflectionClass($obj);
             try {
                 // 类中是否有此方法 -- 如果类中不存在方法，会抛出ReflectionException异常
@@ -64,7 +67,7 @@ class ClassOneDelegator
                     }
                 }
             } catch (ReflectionException $e) {
-                echo $e->getMessage();
+                //echo "ERROR : ".$e->getMessage();
             }
         }
     }
@@ -72,6 +75,7 @@ class ClassOneDelegator
 
 $obj = new ClassOneDelegator();
 $obj->addObject(new ClassTwo());
+// print_r($obj->targets);
 $obj->callClassOne();
 $obj->callClassTwo();
 
