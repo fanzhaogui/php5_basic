@@ -1,16 +1,10 @@
-<?php
-/**
- * User: Andy
- * Date: 2018/6/4
- * Time: 10:14
- */
+<?php 
 
-const TIP = "HELLO WORLD";
+require_once "algorithm/fibonacci.php";
 
-echo TIP;
+// 斐波拉契数列
+$f = new Fibonacci();
+$f->getResult(3);
 
-print TIP;
 
-var_dump(TIP);
 
-print_r(TIP);
