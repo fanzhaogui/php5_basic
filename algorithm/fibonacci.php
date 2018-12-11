@@ -5,11 +5,28 @@
  */
 class Algorithm
 {
-	
-	public function __construct($functionName)
-	{
-		# code...
-	}
+
+    private static $_instance = null;   //所有数据库连接句柄，可以区分不同的库
+
+    private function __construct() {}
+
+    private function __clone(){}
+
+    public static function factory($server)
+    {
+        if (isset(self::$_instance[$server]) && !empty(self::$_instance[$server])) {
+            return self::$_instance[$server];
+        }
+
+        $class = ucfirst($server);
+        if (class_exists($class)) {
+            self::$_instance[$server] = new $class;
+        } else {
+            // throw new Exception("不存在！");
+            echo "不存在！";
+        }
+        return self::$_instance[$server];
+    }
 }
 
 /**

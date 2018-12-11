@@ -1,10 +1,16 @@
 <?php 
-
 require_once "algorithm/fibonacci.php";
+require_once "library/pattern/simpleFactory.php";
 
-// 斐波拉契数列
-$f = new Fibonacci();
-$f->getResult(3);
+
+
+
+
+
+
+
+$fibonacci = Algorithm::factory("Fibonacci");
+$fibonacci->getResult(3);
 
 
 
